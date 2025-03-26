@@ -75,3 +75,13 @@ public class Main{
 No, a static method cannot be overridden in Java. When a subclass defines a static method with the same signature as a static method in its superclass, it is simply hiding the superclass method, not overriding it. This means that the method invoked is determined at compile time based on the reference type, not at runtime based on the object's type. Therefore, static methods do not exhibit polymorphic behavior like instance methods do.
 
 ##### No, because the Java main() method is designated as static, we are unable to override it.
+
+#### super Keyword in Java
+The super keyword in Java is a reference variable that is used to refer to immediate parent class objects.
+
+Whenever you create the instance of a subclass, an instance of the parent class is created implicitly, which is referred to by the super reference variable.
+
+#### Uses of Java super Keyword
+super can be used to refer to the immediate parent class instance variable.
+super can be used to invoke the immediate parent class method.
+super() can be used to invoke the immediate parent class constructor.
