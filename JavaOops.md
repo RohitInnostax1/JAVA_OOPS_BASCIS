@@ -85,3 +85,28 @@ Whenever you create the instance of a subclass, an instance of the parent class 
 super can be used to refer to the immediate parent class instance variable.
 super can be used to invoke the immediate parent class method.
 super() can be used to invoke the immediate parent class constructor.
+
+#### Static Binding in Java
+When type of the object is determined at compiled time(by the compiler), it is known as static binding.
+
+If there is any private, final or static method in a class, there is static binding.
+
+#### Dynamic Binding in Java
+When type of the object is determined at run-time, it is known as dynamic binding.
+
+#### instanceof
+The java instanceof operator is used to test whether the object is an instance of the specified type (class or subclass or interface).
+
+#### Abstraction 
+Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+
+Another way, it shows only essential things to the user and hides the internal details, for example, sending SMS where we type the text and send the message. We do not know the internal processing about the message delivery.
+
+Abstraction lets you focus on what the object does instead of how it does it.
+
+#### Ways to achieve Abstraction
+There are two ways to achieve abstraction in Java:
+
+Using Abstract Class (0 to 100%)
+
+Using Interface (100%)

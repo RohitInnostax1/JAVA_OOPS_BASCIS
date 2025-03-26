@@ -1,6 +1,6 @@
 //method overloading is a way to achieve compile time polymorphism
 //method overriding is a way to achieve run-time time polymorphism
-class Innostax {
+class Innostax1 {
    
     void display()
     {
@@ -8,7 +8,7 @@ class Innostax {
     }
     }
 
-     class Employee extends Innostax{
+     class Employee1 extends Innostax1{
        
 
           void display()
@@ -34,8 +34,9 @@ System.out.println(st1+st2);
        innostax("Software", "Company");
        innostax("Innostax ","is a" +"Company");
        innostax("Innostax ranking in Gurgoan: ", 10);
-       Employee e=new Employee();
+       Employee1 e=new Employee1();
        e.display();
-       
+       System.out.println(e instanceof Employee1);
+       System.out.println(e instanceof Innostax1);
     }
 }

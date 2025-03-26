@@ -1,11 +1,11 @@
-class Innostax {
+class Innostax2 {
 
     void display() {
         System.out.println("Innostax Pvt. Limited ");
     }
 }
 
-class Employee extends Innostax {
+class Employee2 extends Innostax2 {
 
     void display() {
 
@@ -29,7 +29,7 @@ public class Polymoriphsm {
         System.out.println("Sum of vlaues: " + pl.add(1.5, 1.5));
 
         // run time polymorphism or Dynamic Method Dispatch
-        Innostax e = new Employee();
+        Innostax2 e = new Employee2();
         e.display();
 
     }
