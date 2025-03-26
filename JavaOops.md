@@ -52,3 +52,26 @@ To reduce the complexity and simplify the language, multiple inheritance is not 
 Suppose there are three classes A, B, and C. The C class inherits A and B classes. If A and B classes have the same method and we call it from child class object, there will be ambiguity to call the method of A or B class.
 
 Since compile-time errors are better than runtime errors, Java renders compile-time error if you inherit 2 classes. So whether you have same method or different, there will be compile time error.
+
+#### Why Method Overloading is not possible by changing the return type of method only?
+Method overloading in Java is based on the method signature, which includes the method name and parameter list. The return type alone is not sufficient to distinguish between overloaded methods because Java does not consider the return type when resolving method calls. If two methods have the same name and parameter list but different return types, the compiler cannot determine which method to call based solely on the return type.
+
+#### Can we overload Java main() method?
+Yes, technically, it is possible to overload the main() method in Java, but it won't be considered as the entry point for the Java Virtual Machine (JVM) to start the execution of the program. While overloading the main() method is syntactically valid, it doesn't serve the purpose of being the entry point for program execution. The JVM expects the standard signature public static void main(String[] args) for the entry point. Any other overloaded main() method will be treated as a regular method and won't be invoked by the JVM to start the program.
+
+<!-- class OverloadingCalculation3{  
+  void sum(int a,long b){System.out.println("a method invoked");}  
+  void sum(long a,int b){System.out.println("b method invoked");}  
+}  
+public class Main{  
+  public static void main(String args[]){  
+  OverloadingCalculation3 obj=new OverloadingCalculation3();  
+  obj.sum(20,20);//now ambiguity  
+  }  
+}  -->
+
+
+#### Can we override the static method?
+No, a static method cannot be overridden in Java. When a subclass defines a static method with the same signature as a static method in its superclass, it is simply hiding the superclass method, not overriding it. This means that the method invoked is determined at compile time based on the reference type, not at runtime based on the object's type. Therefore, static methods do not exhibit polymorphic behavior like instance methods do.
+
+##### No, because the Java main() method is designated as static, we are unable to override it.
