@@ -1,0 +1,47 @@
+#### Classes and Interfaces
+ PascalCase (Upper CamelCase): Each word starts with an uppercase letter. This style is used for naming classes and interfaces.
+
+#### Methods and Variables
+ CamelCase (Lower CamelCase): The first word starts with a lowercase letter, and each subsequent word starts with an uppercase letter. This style is used for naming methods and variables.
+
+
+
+In Java, an instance of a class (also referred to as an object) is created using the new keyword. The new keyword dynamically allocates memory for an object of that class and returns a reference to it when it is followed by the class name and brackets with optional arguments.
+
+### Different ways to create an object in Java
+
+#### By new keyword
+The most common way to create an object in Java is by using the new keyword followed by a constructor.
+
+For example: ClassName obj = new ClassName();. This allocates memory for the object and calls its constructor to initialize it.
+
+####  By newInstance() method
+
+This method is part of the java.lang.Class class and is used to create a new instance of a class dynamically at runtime. It invokes the no-argument constructor of the class.
+
+For example: ClassName obj = (ClassName) Class.forName("ClassName").newInstance();.
+
+#### By clone() method
+
+The clone() method creates a copy of an existing object by performing a shallow copy. It returns a new object that is a duplicate of the original object. For example: ClassName obj2 = (ClassName) obj1.clone();
+
+#### Java main() method
+The main() method in Java holds a special place as the entry point for any standalone Java application. When a Java program is executed, the Java Virtual Machine (JVM) looks for the main() method to begin execution. This method must adhere to a strict signature to be recognized by the JVM. Understanding the main() method is crucial for any Java developer, as it serves as the bridge between the program and the underlying execution environment provided by the JVM.
+
+The main() is the starting point for JVM to start execution of a Java program. Without the main() method, JVM will not execute the program. The syntax of the main() method is:
+
+ public static void main(String[] rohit) {
+        System.out.println("HI");
+    }
+we can also write like this:-
+
+ public static void main(String rohit[]) {
+        System.out.println("HI");
+    }
+    agrs is general name gave in java main method() but you can use any name.
+
+#### static
+ We can make a method static by using the keyword static. We should call the main() method without creating an object. Static methods are the method that invokes without creating the objects, so we do not need any object to call the main() method.
+
+#### Heap Area
+ Heap stores the actual objects. It creates when the JVM starts up. The user can control the heap if needed. It can be of fixed or dynamic size. When we use a new keyword, the JVM creates an instance for the object in a heap. While the reference of that object stores in the stack. There exists only one heap for each running JVM process. When heap becomes full, the garbage is collected.
