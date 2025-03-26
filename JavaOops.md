@@ -110,3 +110,13 @@ There are two ways to achieve abstraction in Java:
 Using Abstract Class (0 to 100%)
 
 Using Interface (100%)
+
+#### Interface
+An interface in Java is a blueprint of a class. It has static constants and abstract methods.
+
+The interface in Java is a mechanism to achieve abstraction. There can be only abstract methods in the Java interface, not method body. It is used to achieve abstraction and multiple inheritance in Java.
+
+![Interface](image.png)
+
+#### Multiple inheritance is not supported through class in java, but it is possible by an interface, why?
+As we have explained in the inheritance chapter, multiple inheritance is not supported in the case of class because of ambiguity. However, it is supported in case of an interface because there is no ambiguity. It is because its implementation is provided by the implementation class
